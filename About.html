@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="About.css">
+    <title> Read Me</title>  
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="flowerlogo.png" alt="image" width="70px" height="25px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="home.html">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" width="30px">
+            </div> 
+            <!--Aboout Us-->
+            <div class="about">
+                <p><span class="name">HKamanzi|shop</span>
+                Lorem ipsum dolor sit amet <br>
+                consectetur adipisicing elit. 
+                Quam odio dignissimos<br> 
+                iusto quisquam nisi asperiores quidem nesciunt soluta<br>
+                  molestiae suscipit. <img src="flowerlogo.png" alt="img"></p>
+                </div>
+                <script>
+                    var i = 0;//start point
+                    var images=[];
+                    var time=1000;
+            
+                    //Images List
+                    images[0]='Men-Jean.jpg';
+                    images[1]='Second-Shirt.jpg';
+                    images[2]='Blue-T-shirt.jpg';
+            
+                    //To change Images//
+                    function changeImages(){
+                        document.pictures.src=images[i];
+                        if(i < images.length -1){
+                            i++;
+                        }else{
+                            i=0;
+                        }
+                        setTimeout("changeImages()", time);
+                    }
+                    window.onload=changeImages;
+            
+                </script>
+                <img  class="slideshow" name="pictures" width="350px" height="150px">
+                <hr>
+                <div class="Service">
+                    <div class="sentences">
+                        <h2>Services 1</h2>
+                        <p>Lorem ipsum dolor sit amet <br>
+                            consectetur, adipisicing elit. <br>
+                            Inventore quasi sapiente magnam sed<br>
+                             omnis rerum qui sunt eos modi quisquam.</p>
+                    </div>
+                   
+                         <div class="paragraph">
+                            <h2>Services 2</h2>
+                            <p id="para">Lorem ipsum dolor sit amet <br>
+                                consectetur, adipisicing elit. <br>
+                                Inventore quasi sapiente magnam sed<br>
+                                 omnis rerum qui sunt eos modi quisquam.</p>
+                         </div>
+                         
+                </div>
+            
+</body>
+</html>
